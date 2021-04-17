@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>position 연습</title>
+        <style>
+            #first {
+                border : 1px solid red;
+            }
+            #second {
+                border : 1px solid blue;
+                position : relative;
+                top : 5px;
+                left : 5px;
+            }
+            #third {
+                border : 1px solid green;
+                position : absolute;
+                top : 25px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="first">first</div>
+        <div id="second">second
+            <div id="third">third</div>
+        </div>
+        
+    </body>
+</html>
