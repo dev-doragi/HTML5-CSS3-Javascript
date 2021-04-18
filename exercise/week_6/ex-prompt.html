@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>document.write() 활용</title>
+    </head>
+    <body>
+        <h3>document.write() 활용</h3>
+        <hr>
+        <script>
+            document.write("<h3>Welcome!</h3>");
+            document.write("2 + 5 는 <br>");
+            document.write("<mark>7 입니다.</mark>");
+            var ret = prompt("이름을 입력하세요", "김철수");
+            if(ret == null) {
+                document.write("<hr>");
+                document.write("<p>이름이 없어요</p>"); }
+            else if(ret == ""){
+                document.write("<hr>");
+                document.write("<p>이름을 입력하지 않으셨어요</p>"); }
+            else{
+                document.write("<hr>");
+                document.write("이름이 "+ret+"입니다") }
+
+            var con = confirm("당신의 이름이 최재인이 맞나요?");
+            if(ret == "최재인" && con == true) {
+                document.write("<hr>");
+                document.write("<p>최재인 맞습니다.</p>"); }
+            else if(con == false){
+                document.write("<hr>");
+                document.write("<p>취소하셨습니다.</p>"); }
+            else {
+                document.write("<hr>");
+                document.write("<p>최재인이 아닙니다.</p>"); }
+
+        </script>
+    </body>
+</html>

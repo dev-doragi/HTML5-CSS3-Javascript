@@ -9,8 +9,9 @@
         <script>
             var x=100; // 전역변수 x
             function f() { // 함수 f() 선언
-                this.x = 150;
                 var x = 1; // 지역변수 x
+                this.x = 150;
+                x = 100;
                 document.write("지역변수 x=" + x);
                 document.write("<br>");
                 document.write("전역변수 x=" + this.x);
