@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>while 문</title>
+    </head>
+    <body>
+        <h3>while 문으로 1에서 n까지 곱</h3>
+        <hr>
+        <script>
+            var n = prompt("0보다 큰 정수를 입력하세요");
+            n = parseInt(n); // 문자열 n을 숫자로 바꿈
+            if(n == 0){
+                document.write("곱을 구할 수 없습니다.")
+            }
+            else{
+                var i=1, sum=1;
+                while(i<=n) { // i가 1에서 n까지 반복
+                    sum *= i;
+                    i++;
+                }
+                document.write("1에서 " + n + "까지 곱은 " + sum);
+            }
+        </script>
+    </body>
+</html>
