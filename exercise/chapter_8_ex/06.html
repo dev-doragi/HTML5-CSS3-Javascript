@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>innerHTML</title>
+        <script>
+            function text() {
+                var p = document.getElementById("P");
+                var input = prompt("HTML 텍스트 혹은 그냥 텍스를 입력하세요.")
+                p.innerHTML = "<p>" + input + "</p>";
+            }
+        </script>
+    </head>
+    <body>
+        <h3>innerHTML</h3>
+        <hr>
+        <p id="P" onclick="text()">
+            이번 여름에는 어디로 여행을 갈까요?
+        </p>
+    </body>
+</html>

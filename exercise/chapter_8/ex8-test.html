@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>실습</title>
+        <script>
+            function change(obj) {
+                // var obj = document.getElementById("test");
+                obj.style.color = "green";
+                obj.style.fontSize = "20px";
+                obj.style.border = "1px dotted red";
+
+                var text = "이 태그의 아이디는 " + obj.id + " 입니다. \n";
+                text += "이 태그의 이름은 " + obj.tagName + " 입니다. \n" ;
+                text += "이 태그의 글자 색은 " + obj.style.color + " 입니다. \n" ;
+                text += "이 태그의 글자 크기는 " + obj.style.fontSize + " 입니다. \n" ;
+                text += "이 태그의 테두리는 " + obj.style.border + " 입니다. \n" ;
+
+                alert(text);
+            }
+        </script>
+    </head>
+    <body>
+        <h3>실습</h3>
+        <hr>
+        <div id="test" onclick="change(this)">클릭해 보세요. 변화를 만날 수 있을거에요.</div>
+    </body>
+</html>

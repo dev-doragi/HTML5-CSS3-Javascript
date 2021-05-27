@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>문제4</title>
+        <style>
+            #nav {
+                border : 1px solid red;
+                width : 500px;
+                background :olive;
+            }
+
+            #side {
+                border : 1px solid blue;
+                width : 49px;
+                height : 400px;
+                float : left;
+                background : orange;
+            }
+
+            #article {
+                border : 1px solid green;
+                width : 449px;
+                height : 400px;
+                float : left;
+                background : mistyrose;
+            }
+
+            #nav ul {
+                display : table;
+                margin-left : auto;
+                margin-right : auto;
+                margin : 0;
+                padding : 0;
+                width : 500px;
+            }
+
+            #nav ul li {
+                display : inline-block;
+                list-style-type : none;
+                padding : 0px 15px;
+                transition : transform 0.5S;
+            }
+
+            #nav ul li a {
+                color : white;
+                text-decoration : none;
+            }
+
+            #bigger:hover {
+                font-size : 1.5em;
+                font-weight : bold;
+            }
+
+            #nav ul li a:hover {
+                color : violet;
+            }
+
+            #rotate:hover { transform : rotate(80deg); }
+            #skew:hover { transform : skew(0deg, -60deg); }
+            #translate:hover { transform : translate(15px, 10px); }
+            #scale:hover { transform : scale(2,1); }
+        </style>
+    </head>
+    <body>
+        <nav id ="nav">
+            <span>nav</span>
+            <ul>
+                <li id="rotate"><a href="#">메뉴1</a></li>
+                <li id="skew"><a href="#">메뉴2</a></li>
+                <li id="translate"><a href="#">메뉴3</a></li>
+                <li id="scale"><a href="#">메뉴4</a></li>
+            </ul>
+        </nav>
+        <side id="side">
+            <span id="bigger">side</span>
+            <div></div>
+        </side>
+        <article id="article">
+            <span>article</span>
+            <div>
+            </div>
+        </article>
+    </body>
+</html>

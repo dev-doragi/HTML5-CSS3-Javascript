@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>50px~10px 크기 출력</title>
+    </head>
+    <body>
+        <h3>for 문으로 50px~10px 크기 출력</h3>
+        <hr>
+        <script>
+            for(var size=50; size>=10; size-=5){
+                document.write("<span ");
+                document.write("style='font-size:" + size + "px' 'color:#008B" + size + "''>");
+                document.write(size + "px");
+                document.write("</span>");
+            }
+        </script>
+    </body>
+</html>

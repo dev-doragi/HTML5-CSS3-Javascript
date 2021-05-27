@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>position</title>
+        <style>
+            #first {
+                border : 1px solid red;
+                width : 150px;
+            }
+            #second {
+                border : 1px solid blue;
+                width : 150px;
+                height : 100px;
+                position : relative;
+            }
+            #third {
+                display : inline-block;
+                border : 1px solid green;
+                position: relative;
+                top : 5px;
+                left : 15px;
+                
+            }
+            #four {
+                display : inline-block;
+                border : 1px solid purple;
+                position: relative;
+                top : 5px;
+                left : 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="first">first</div>
+        <div id="second">second<br>
+            <div id="third">third</div>
+            <div id="four">four</div>
+        </div>
+    </body>
+</html>

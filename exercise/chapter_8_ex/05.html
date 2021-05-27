@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>z-index 스타일 프로퍼티</title>
+        <style>
+            div { position : absolute; }
+            img { position : absolute; }
+        </style>
+    </head>
+    <body>
+        <h3>z-index 스타일 프로퍼티</h3>
+        <hr>
+        <div>
+            <img src="media/spade-A.png" width="100" height="140" alt="스페이드A" onclick=index(this)>
+            <img src="media/spade-2.png" width="100" height="140" alt="스페이드2" onclick=index(this)>
+            <img src="media/spade-3.png" width="100" height="140" alt="스페이드3" onclick=index(this)>
+            <img src="media/spade-7.png" width="100" height="140" alt="스페이드7" onclick=index(this)>
+        </div>
+        <script>
+            var img = document.getElementsByTagName("img");
+            for(var i=0; i<img.length; i++) {
+                img[i].style.zIndex = i+1;
+            }
+
+            function index(obj) {
+                obj.style.zIndex = 0;
+                for(var i=0; i<img.length; i++) {
+                    img[i].style.zIndex += 1;
+                }
+            }
+        </script>
+    </body>
+</html>

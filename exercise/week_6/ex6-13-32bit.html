@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>비트 연산</title>
+        <script>
+            function digit32(v) {
+                var str="";
+                for(i=0; i<32; i++, v<<=1) {
+                    if((v & 0x80000000)) str += "1"; 
+                    else str += "0";
+                }
+                return str;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>비트 논리 연산과 시프트 연산</h3> <hr>
+        <script>
+            var x=10, y=3;
+            document.write("<pre>");
+            document.write("x=" + x + ", y=" + y + "<br>");
+            document.write("x : " + digit32(x) + "<br>");
+            document.write("y : " + digit32(y) + "<br>");
+            document.write("<hr>");
+            document.write("x & y : " + digit32(x&y) + "<br>");
+            document.write("x | y : " + digit32(x|y) + "<br>");
+            document.write("x ^ y : " + digit32(x^y) + "<br>");
+            document.write("~x : " + digit32(~x), "(", (~x), ")", "<br>");
+            document.write("<hr>");
+            document.write("x << 1 : " + digit32(x<<1) + " (" + (x<<1) + ")<br>");
+            document.write("x >> 1 : " + digit32(x>>1) + " (" + (x>>1) + ")<br>");
+            document.write("x >>> 1: " + digit32(x>>>1) + " (" + (x>>>1) + ")<br>");
+            document.write("<hr>");
+            document.write("x : " + digit32(x), "(", (x), ")", "<br>");
+            document.write("~x >> 1: " + digit32(~x>>1) + " (" + (~x>>1) + ")<br>");
+            document.write("~x >>> 1: " + digit32(~x>>>1) + " (" + (~x>>>1) + ")");
+            document.write("</pre>");
+        </script>   
+    </body>
+</html>

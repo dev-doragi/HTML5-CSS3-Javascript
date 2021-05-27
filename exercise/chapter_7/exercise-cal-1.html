@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>계산기</title>
+        <script>
+            function Add() { return this.op1 + this.op2; }
+            function Minus() { return this.op1 - this.op2; }
+            function Mul() { return this.op1 * this.op2; }
+            function Div() { return this.op1 / this.op2; }
+
+            var operand = new Object();
+            operand.op1 = 12; 
+            operand.op2 = 6; 
+            operand.Add = Add;
+            operand.Minus = Minus;
+            operand.Mul = Mul;
+            operand.Div = Div;
+        </script>
+    </head>
+    <body>
+        <h3>계산기</h3>
+        <hr>
+        <script>
+            document.write(operand.op1 + " + " + operand.op2 + " = " + operand.Add() + "<br>");
+            document.write(operand.op1 + " - " + operand.op2 + " = " + operand.Minus() + "<br>");
+            document.write(operand.op1 + " * " + operand.op2 + " = " + operand.Mul() + "<br>");
+            document.write(operand.op1 + " / " + operand.op2 + " = " + operand.Div() + "<br>");
+        </script>
+    </body>
+</html>

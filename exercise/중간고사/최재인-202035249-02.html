@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>회원가입</title>
+        <style>
+            input:hover, textarea:hover {
+                background : aliceblue;
+                }
+            input[type=text]:focus, input[type=password]:focus, input[type=email]:focus { 
+                font-size : 120%; 
+                }
+            label {
+                display : block;
+                padding : 10px;
+                }
+            label span {
+                display : inline-block;
+                width : 100px;
+                text-align : right;
+                padding : 10px;
+                }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h3>회원가입</h3>
+        </header>
+        <hr>
+        <section>
+            <form>
+                <label>
+                    <span>ID :</span><input type="text" placeholder="ID 입력"><br>
+                </label>
+                <label>
+                    <span>Password :</span><input type="password" placeholder="Password 입력"><br>
+                </label>
+                <label>
+                    <span>Email :</span><input type="email" placeholder="name@gachon.ac.kr">
+                </label>
+                <label>
+                    <span>생년월일 :</span><input type="date" value ="2001-01-25"><br>
+                </label>
+                <label>
+                    <span>신분 :</span><input type="text" list ="what" placeholder="신분 입력"> <br>
+                    <datalist id="what">
+                        <option value = "대학생">
+                        <option value = "대학원생">
+                        <option value = "교수">
+                    </datalist>
+                </label>
+                <label>
+                    <span></span><input type="submit" value="submit">
+                </label>
+            </form>
+        </section>
+    </body>
+</html>

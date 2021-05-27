@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>시간표 만들기</title>
+        <style>
+            caption {
+                font-size: x-large;
+            }
+            body thead  { 
+                background-color : darkgray;
+                font-weight: bold;
+                color : yellow;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: mistyrose;
+            }
+
+            tbody td {
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            td, th {
+                text-align: center;
+                padding : 5px;
+                height : 50px;
+                width : 100px;
+            }
+
+            #time {
+                background-color: darkgray;
+                color : black;
+                padding : 7px;
+                height : 10px;
+                width : 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h3>2021년 1학기 시간표</h3>
+        </header>
+        <hr>
+        <section>
+            <table border="1px">
+                <caption>&lt;2021년 1학기 시간표&gt;</caption>
+                <thead>
+                    <tr><th id="time">교시</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="time">1</td>
+                        <td rowspan="2">자료구조</td>
+                        <td rowspan="4">리눅스</td>
+                        <td> </td>
+                        <td rowspan="2">일본대중문화</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td id="time">2</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td id="time">3</td>
+                        <td> </td>
+                        <td rowspan="2">자료구조</td>
+                        <td rowspan="2">역사와상상력</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td id="time">4</td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td id="time">5</td>
+                        <td rowspan="4">C++</td>
+                        <td> </td>
+                        <td rowspan="4">확률과 통계</td>
+                        <td> </td>
+                        <td rowspan="4">웹프로그래밍</td>
+                    </tr>
+                    <tr><td id="time">6</td><td></td><td></td></tr>
+                    <tr><td id="time">7</td><td></td><td></td></tr>
+                    <tr><td id="time">8</td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>

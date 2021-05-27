@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>new Object()로 사용자 객체 만들기</title>
+        <script>
+            function getTitle() { return this.title; }
+            function getAuthor() { return this.author; }
+            function getPrice() { return this.price; }
+            var book = new Object();
+            book.title = "HTML5"; 
+            book.author = "황기태"; 
+            book.price = 20000;
+            book.getTitle = getTitle;
+            book.getAuthor = getAuthor;
+            book.getPrice = getPrice;
+        </script>
+    </head>
+    <body>
+        <h3>new Object()로 사용자 객체 만들기</h3>
+        <hr>
+        <script>
+            document.write("책 이름: ");
+            document.write(book.getTitle() + "<br>");
+            document.write("책 저자: ");
+            document.write(book.getAuthor() + "<br>");
+            document.write("책 가격: ");
+            document.write(book.getPrice() + "원" + "<br>");
+        </script>
+    </body>
+</html>

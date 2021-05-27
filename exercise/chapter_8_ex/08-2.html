@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>클릭하면 2,3,4배로 옆으로 늘어납니다.</title>
+        <script>
+            var x = 2;
+            function scale(obj) {
+                obj.style.transform = "scale(" + x + ",1)";
+                if(x != 8)
+                    x *= 2;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>클릭하면 2,3,4배로 옆으로 늘어납니다.</h3>
+        <hr>
+        <img
+         src="media/spongebob.png"
+         style="display:block; margin:auto; width:100px; height:100;"
+         alt="스폰지밥과 뚱이"
+         onclick=scale(this)>
+    </body>
+</html>

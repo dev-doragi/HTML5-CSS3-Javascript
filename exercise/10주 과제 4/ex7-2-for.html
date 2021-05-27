@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>원소 찾기</title>
+    </head>
+    <body>
+        <h3>원소 찾기</h3>
+        <hr>
+        <script>
+            var plots = [20, 5, 8, 15, 20]; // 원소 5개의 배열 생성
+            var sum = 0;
+            document.write("var plots = [20, 5, 8, 15, 20]<br>");
+            for(i=0; i<5; i++) {
+                var size = plots[i]; // plots 배열의 i번째 원소
+                while(size>0) {
+                    document.write("*");
+                    size--;
+                }
+                document.write(plots[i] + "<br>");
+                sum += plots[i];
+            }
+            document.write("<br>" + "plots 배열 원소의 합 = " + sum);
+            var ret = prompt("찾는 원소를 입력하세요.");
+            var tag = 0;
+            for(i=0; i<plots.length; i++){
+                if(ret == plots[i]){
+                    document.write("<br>" + "찾는 원소의 인덱스는 " + i + " 입니다.");
+                    tag = 1;
+                }
+            }
+            if(tag == 0)
+                document.write("<br> 찾는 값이 존재하지 않습니다.");
+        </script>
+    </body>
+</html>

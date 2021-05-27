@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>리터럴 표기법으로 사용자 객체 만들기</title>
+        <script>
+            var book = {
+                title : "HTML5",
+                author : "황기태",
+                price : 20000, 
+
+                getTitle : function() { return this.title; },
+                getAuthor : function() { return this.author; },
+                getPrice : function() { return this.price; } 
+            };
+        </script>
+    </head>
+    <body>
+        <h3>리터럴 표기법으로 사용자 객체 만들기</h3>
+        <hr>
+        <script>
+            document.write("책 이름: ");
+            document.write(book.getTitle() + "<br>");
+            document.write("책 저자: ");
+            document.write(book.getAuthor() + "<br>");
+            document.write("책 가격: ");
+            document.write(book.getPrice() + "원" + "<br>");
+        </script>
+    </body>
+</html>
